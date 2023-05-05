@@ -11,6 +11,13 @@
 
 '''
 N = int(input('Введите длинну списка: '))
+
+# from random import sample			            # вариант с рандомным НЕ повторяемым заполнением списка 
+# list_A = sample(range(1,N+1), N)
+
+# list_A = list(range(1,N+1))			        # вариант с заполнением списка по порядку
+
+
 from random import randint			            
 list_A = [randint(1,N+1) for i in range(N)]
 print (list_A)
