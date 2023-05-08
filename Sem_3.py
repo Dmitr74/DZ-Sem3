@@ -46,14 +46,13 @@ print ('Число Х встречается', count, 'раз.')
 
 N = int(input('Введите длинну списка: '))
 X = int(input('Введите искомое число Х: '))
-
-from random import randint			            
-list_A = [randint(1,N+1) for i in range(N)]
+a = X + 1
+list_A = list(range(1,N+1))
 print (list_A)
 
 for i in range(0,len(list_A)):
     if X == list_A [i]: 
-        print ('Число до X:', list_A [i-1], 'Число после X:',list_A [i+1])
+        print ('Число следующее за X:', a)
         
         
 
